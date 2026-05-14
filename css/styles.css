@@ -255,6 +255,16 @@ p { margin: 0 0 1rem; }
 }
 .cred-text { font-size: 0.95rem; color: var(--color-text-soft); max-width: 480px; margin: 0; }
 .cred-text strong { color: var(--color-text); }
+.cred-name {
+  color: inherit !important;
+  text-decoration: none;
+  display: inline;
+  transition: color 0.15s;
+}
+.cred-name strong { transition: color 0.15s; }
+.cred-name svg { color: #0a66c2; transition: transform 0.15s; }
+.cred-name:hover strong { color: #0a66c2; }
+.cred-name:hover svg { transform: translateY(-1px); }
 .cred-chips { display: flex; flex-wrap: wrap; gap: 10px; }
 .chip {
   display: inline-flex;
