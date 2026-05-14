@@ -80,6 +80,23 @@ p { margin: 0 0 1rem; }
   font-size: 0.9rem;
 }
 .nav-cta:hover { background: var(--color-primary-dark); color: #fff !important; }
+.nav-login {
+  display: inline-flex;
+  align-items: center;
+  gap: 6px;
+  padding: 7px 14px;
+  border-radius: var(--radius);
+  font-weight: 600;
+  font-size: 0.9rem;
+  color: var(--color-primary) !important;
+  background: transparent;
+  border: 1.5px solid var(--color-primary);
+  transition: background 0.15s, color 0.15s;
+}
+.nav-login:hover {
+  background: var(--color-primary);
+  color: #fff !important;
+}
 .nav-toggle { display: none; background: none; border: none; cursor: pointer; padding: 8px; }
 .nav-toggle span { display: block; width: 22px; height: 2px; background: var(--color-text); margin: 4px 0; }
 
