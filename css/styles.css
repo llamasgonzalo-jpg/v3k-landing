@@ -219,9 +219,24 @@ p { margin: 0 0 1rem; }
   flex-wrap: wrap;
   align-items: center;
   justify-content: space-between;
-  gap: 20px;
+  gap: 24px;
 }
-.cred-text { font-size: 0.95rem; color: var(--color-text-soft); max-width: 480px; }
+.cred-author {
+  display: flex;
+  align-items: center;
+  gap: 16px;
+  max-width: 600px;
+}
+.cred-avatar {
+  width: 72px;
+  height: 72px;
+  border-radius: 50%;
+  object-fit: cover;
+  flex-shrink: 0;
+  border: 3px solid var(--color-primary-soft);
+  box-shadow: var(--shadow-sm);
+}
+.cred-text { font-size: 0.95rem; color: var(--color-text-soft); max-width: 480px; margin: 0; }
 .cred-text strong { color: var(--color-text); }
 .cred-chips { display: flex; flex-wrap: wrap; gap: 10px; }
 .chip {
